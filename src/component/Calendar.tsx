@@ -20,6 +20,7 @@ export const Calendar = () => {
   return (
     <>
       <ReactCalendar
+        calendarType="US"
         onChange={setValue}
         value={value}
         formatDay={(_, date) => moment(date).format("D")}
